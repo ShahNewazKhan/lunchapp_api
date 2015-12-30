@@ -1,9 +1,8 @@
 'use strict';
 
 var Profile = require('../models/Profile/Profile');
-var bcrypt = require('bcrypt');
 var sendgrid_api_key = "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";
-var sendgrid  = require('sendgrid')(sendgrid_api_key);
+//var sendgrid  = require('sendgrid')(sendgrid_api_key);
 
 /**
  * @api {post} /profile/getProfile Get profile by email

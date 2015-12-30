@@ -10,7 +10,7 @@ console.log("+Connecting to MongoDB...");
 if (process.env.MONGOLAB_URI) {
 	mongoose.connect(process.env.MONGOLAB_URI);	
 } else {
-	mongoose.connect('mongodb://0.0.0.0:27017/products', 'diabetes_genie');	
+	mongoose.connect('localhost', 'diabetes_genie');	
 }
 
 mongoose.connection.on('error', console.error.bind(console, 'Connection Error'));
