@@ -1,0 +1,7 @@
+{
+  "name": "My Diabetes Genie Node REST API",
+  "version": "0.2.4",
+  "description": "Node REST API for My Diabetes Genie",
+  "title": "My Diabetes Genie Node REST API",
+  "url" : "http://107.170.255.42:3000/api/v1"
+}
