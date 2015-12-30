@@ -1,18 +1,13 @@
 module.exports = function(app){
 
 	// Profile routes
-	var profilesController = require('../controllers/profileController.js');
+	var restaurantsController = require('../controllers/restaurantsController.js');
 
-	app.route('/api/v1/profile')
-		.post(profilesController.post)
-		.put(profilesController.update);
+	app.route('/api/v1/restaurant')
+		.post(restaurantsController.post)
+		.put(restaurantsController.update)
+		.get(restaurantsController.get);
 
-	app.route('/api/v1/profile/:id')
-		.delete(profilesController.delete);
-
-	app.route('/api/v1/profile/getProfile')
-		.post(profilesController.get);
-
-	app.route('/api/v1/profile/activate/:profile_id/:activationCode')
-		.get(profilesController.activate);
+	app.route('/api/v1/restaurant/:id')
+		.delete(restaurantsController.delete);
 };
