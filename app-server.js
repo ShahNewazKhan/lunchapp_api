@@ -32,7 +32,7 @@ mongoose.connection.once('open', function callback() {
 	});
 
 	//Get the port
-	var anonPort = 3000;
+	var anonPort = 3001;
 	/*if (process.env.ENVIRONMENT === 'production' || process.env.ENVIRONMENT === 'staging') {
 		anonPort = process.env.PORT;
 
